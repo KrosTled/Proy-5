@@ -1,0 +1,40 @@
+*{
+    color: white;
+}
+.contenido{
+    position: relative;
+    margin: 0 10% 0 10%;
+    height: 100%;
+}
+
+.row{
+    margin: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10px 5% 10px 5%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgBg{
+    background-image: "../img/";
+}
+.heightBg{
+    height: 540px;
+    width: 100%;
+}
+.textCenter{
+    text-align: center;
+}
+
+.imgInicio{
+    width: 100%;
+    border-radius: 15px;
+    border-style: solid;
+}

@@ -1,0 +1,33 @@
+.custom-shape-divider-top-1669140888 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1669140888 svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 135px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1669140888 .shape-fill {
+    fill: #9F936E;
+}
+
+.QScont{
+    position: relative;
+}
+
+.QStext{
+    width: 55%;
+    color: white;
+}
+
+.QSimg{
+    width: 35%;
+}

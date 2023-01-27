@@ -1,0 +1,17 @@
+
+.imgZone{
+    width: 35%;
+}
+.imgContainer{
+    position: block;
+}
+
+
+.iniText{
+    width: 55%;
+}
+
+.introCatalogo{
+    display: block;
+    color: black;
+}
