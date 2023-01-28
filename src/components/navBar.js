@@ -12,9 +12,9 @@ function NavBar(){
       <img className="imgLogo" src={Logo} alt="logo"/>
       <div className="col">
         <div className="contentNav row">
-          <div className="col">Inicio</div>
-          <div className="col">Donde encontrarnos</div>
-          <div className="col">Mi cuenta</div>
+          <div className="col navElement"><Link className="linkDecoration" to={'/'}>Inicio</Link></div>
+          <div className="col navElement"><Link className="linkDecoration" to={'/about'}>Sobre nosotros</Link></div>
+          <div className="col navElement"><Link className="linkDecoration" to={'/account'}>Mi cuenta</Link></div>
         </div>
       </div>
 

@@ -36,3 +36,17 @@ nav{
 .contentNav{
     margin-top: 5px;
 }
+
+.navElement{
+    cursor: pointer;
+    transition: 120ms;
+}
+
+.navElement:hover{
+    transform: scale(1.2);
+}
+
+.linkDecoration{
+    text-decoration: none;
+    color: white;
+}

@@ -18,7 +18,7 @@ function Fotter(){
                         <h6 className="Nombre">Github:  <a>https://github.com/KrosTled</a></h6>          
                     </div>
                     <div>
-                        <h6 className="Nombre">De igual forma gran parte de las imagenes fueron generadas por AIs</h6>          
+                        <h6 className="Nombre">De igual forma gran parte de las imagenes fueron generadas por una AI ( Midjourney )</h6>          
                     </div>
                 </div>
             </div>
