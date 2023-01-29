@@ -5,5 +5,55 @@
 .bgNormal{
     background-color: gray;
     margin: 0 0 0 0;
+    width: 100%;
+}
+.userImg{
+    transform: scale(0.3);
+    translate: 0 -100px;
+}
+
+.upRow{
+    height: 75px;
+}
+.lowerRow{
+    margin-top: 40px;
     width: 1920px;
+}
+.leftCol{
+    height: 750px;
+    width: 400px;
+}
+.rightCol{
+    height: 750px;
+}
+
+.bglower{
+    background-color: grey;
+    border-radius: 10px;
+    border-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.leftText{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 120ms;
+    border-radius: 10px;
+}
+
+.leftText:hover{
+    transform: scale(1.1);
+    background: rgba(0,0,0,0.1);
+}
+
+.bgContainers{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);
 }

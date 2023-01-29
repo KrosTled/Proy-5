@@ -3,8 +3,6 @@ import img2 from './Img/training.png';
 import img3 from './Img/computerCience.png';
 import img4 from './Img/EngeenierTeam.png';
 
-let pizzaTomate = 'Masa, Salsa de tomate, Mozzarella, '
-
 const thingsIT = [{
     id:0,
     nombre:'AI con DeepLearning',

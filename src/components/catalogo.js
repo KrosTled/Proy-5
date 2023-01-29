@@ -4,11 +4,10 @@ import bgCards from './Img/bgCards.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
-import {thingsIT} from './elementosMenu.js';
+
+
+import {thingsIT} from './elementosTienda.js';
 
 function BasicExample() {
   return (
@@ -20,7 +19,6 @@ function BasicExample() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
   );
@@ -78,20 +76,22 @@ function Catalogo(){
   )
 }
 function ListadoThings(){
-    return (
-    <div>
+    
+     
+        return (
         <div>
-            <div className='menuElements'>
-                <Container>
-                    <h2 className='menuTitulo'>Servicios</h2>
-                    <div className='menuArrayCards'>
-                        <ThingsElement/>  
-                    </div>
-                    <h5 className='footerCatalog'>Para cualquier adquisicion de un producto hacer desde panel de usuario</h5>
-                </Container> 
-            </div>  
+            <div>
+                <div className='menuElements'>
+                    <Container>
+                        <h2 className='menuTitulo'>Servicios</h2>
+                        <div className='menuArrayCards'>
+                            <ThingsElement/>  
+                        </div>
+                        <h5 className='footerCatalog'>Para cualquier adquisicion de un producto hacer desde panel de usuario</h5>
+                    </Container> 
+                </div>  
+            </div>
         </div>
-    </div>
   )
 }
 

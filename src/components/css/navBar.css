@@ -50,3 +50,7 @@ nav{
     text-decoration: none;
     color: white;
 }
+.navBg{
+    background: rgb(0,73,182);
+background: linear-gradient(180deg, rgba(0,73,182,1) 0%, rgba(128,128,128,0.41778718323266806) 85%);
+}

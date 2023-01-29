@@ -1,0 +1,14 @@
+.bg{
+    background-color: black;
+    width: 1932px;
+}
+
+.message{
+    font-size: 48px;
+    color: red;
+}
+
+.return{
+    margin-top: 25px;
+    font-size: 32px;
+}

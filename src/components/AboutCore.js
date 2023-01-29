@@ -28,7 +28,7 @@ function About(){
                         </div>
                         <div className="col imgZone">
                             <div className="imgContainer">
-                                <img className='imgInicio' src={desafios} alt="pizza"/>
+                                <img className='imgInicio' src={desafios} alt="Nuestra Vision.jpg"/>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ function About(){
                     <div className="row">
                         <div className="col imgZone">
                             <div className="imgContainer">
-                                <img className='imgInicio' src={PosiblesProblemas} alt="pizza"/>
+                                <img className='imgInicio' src={PosiblesProblemas} alt="Posibles problematicas.png"/>
                             </div>
                         </div>
                         

@@ -5,6 +5,7 @@ import Fotter from './fotter';
 import NavBar from './navBar.js';
 import ListadoThings from './catalogo';
 import companyBuilding from './Img/companyBuilding.png';
+import { useEffect } from 'react';
 
 function InicioComp(){
     return (
@@ -14,7 +15,7 @@ function InicioComp(){
                     <div className="row">
                         <div className="col imgZone">
                             <div className="imgContainer">
-                                <img className='imgInicio' src={companyBuilding} alt="pizza"/>
+                                <img className='imgInicio' src={companyBuilding} alt="Company builing.jpg"/>
                             </div>
                         </div>
                         <div className="col iniText">
@@ -48,6 +49,9 @@ function IntroCatalogo(){
 }
 
 function Inicio(){
+    useEffect(() => {   
+        document.title = `Inicio`;  
+    });
     return(
         <div style={{
             backgroundImage: `url(${fondo})`,

@@ -1,0 +1,13 @@
+.deployment{
+    height: 730px;
+}
+
+.containerLeftUp{
+    align-self: flex-start;
+}
+.containerLeftLower{
+    align-self: flex-start;
+}
+.containerRight{
+    background-color: black;
+}

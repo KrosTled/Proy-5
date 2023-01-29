@@ -6,18 +6,10 @@ import UserInterfaz from './userPanelGeneric.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './About';
+import Error from './Error.js';
+import rutas from './routes/rutas';
 
-const router = createBrowserRouter([{
-  path:'/',
-  element:<App/>//Home
-},{
-  path:'/about',
-  element:<About/>
-}
-,{
-  path:'/account',
-  element:<UserInterfaz/>
-}])
+const router = createBrowserRouter(rutas)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
