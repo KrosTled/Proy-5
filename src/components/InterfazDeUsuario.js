@@ -6,11 +6,29 @@ import Resumen from "./userInterfaz/resumen.js";
 import Servicio from "./userInterfaz/Servicios";
 import Contacto from "./userInterfaz/contacto";
 import FAQ from "./userInterfaz/FAQ";
+import { verify } from "./authorizations/auth";
+import { useNavigate } from "react-router-dom";
 
-
+const getUserAndServices = async () =>{
+    let userAndServices = {}
+    if(localStorage.getItem('jwt')){
+        await verify(localStorage.getItem('jwt')).then(response => userAndServices = {username: response.username, services: response.services})
+        return userAndServices
+    }else{
+        const navigate = useNavigate
+        navigate('/')
+    }
+}
 
 function CoreInterfaz(){
     const [userMode, changeUserMode] = useState(<Resumen/>);
+    const [username, setUsername] = useState('Username');
+    const [services, setServices] = useState('Username');
+    getUserAndServices().then(result => {
+        setUsername(result.username)
+        setServices(result.services)
+    }) 
+
 
     // De forma similar a componentDidMount y componentDidUpdate  
     useEffect(() => {   
@@ -31,7 +49,7 @@ function CoreInterfaz(){
                         <div className="upRow row">
                             <img src={UserImg} className="col userImg" />
                             <div className="upRow col">
-                                <div>Nombre de usuario</div>
+                                <div>{username}</div>
                                 <div>Rol:</div>
                             </div>
                         </div>

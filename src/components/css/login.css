@@ -1,0 +1,107 @@
+.width{
+    width: 100%;
+}
+.withoutMargins{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.containerTitulo{
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.titulo{
+    color: black;
+}
+
+.containerUser{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 60%;
+    padding: 0 0 0 0;
+    background-color: white;
+    color: black;
+    height: 500px;
+    border-radius: 20px;
+}
+.return{
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border-radius: 20px;
+    transition: 120ms;
+}
+.return:hover{
+    transform: scale(1.1);
+    color: rgb(192, 192, 192);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px rgba(95, 0, 154, 0.3);
+}
+.formularioUser{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.formularioUser .divform{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.formularioUser label{
+    font-size: 20px;
+    color: black;
+    width: 100%;
+}
+.formularioUser input{
+    width: 100%;
+    border-radius: 20px;
+    color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.formularioUser button{
+    background-color: #0049b6;
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 240ms;
+}
+.formularioUser button:hover{
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.linkText{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+.linkText:hover{
+    color: white;
+}
+.registerGoto{
+    display: block;
+    width: 140px;
+    color:black;
+    text-decoration: none;
+    transition: 120ms;
+    align-self: baseline;
+    justify-self: baseline;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+.registerGoto:hover{
+    transform: scale(1.1);
+}
+
+.linkContainer{
+    display: block;
+    flex-direction: row;
+}

@@ -2,6 +2,9 @@ import App from '../App';
 import UserInterfaz from '../userPanelGeneric.js';
 import About from '../About';
 import Error from '../Error.js';
+import LoginTemplate from '../components/authorizations/login.js';
+import RegisterTemplate from '../components/authorizations/register.js';
+import auth from '../components/authorizations/isAuth';
 
 const rutas = [
     {
@@ -17,6 +20,14 @@ const rutas = [
   ,{
     path:'/account',
     element:<UserInterfaz/>
-  }]
+  },{
+    path:'/login',
+    element:<LoginTemplate/>
+  }
+  ,{
+    path:'/register',
+    element:<RegisterTemplate/>
+  }
+]
 
   export default rutas

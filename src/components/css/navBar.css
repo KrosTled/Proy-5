@@ -49,8 +49,13 @@ nav{
 .linkDecoration{
     text-decoration: none;
     color: white;
+    border-radius: 20px;
+}
+.linkDecoration:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(192, 192, 192);
 }
 .navBg{
     background: rgb(0,73,182);
-background: linear-gradient(180deg, rgba(0,73,182,1) 0%, rgba(128,128,128,0.41778718323266806) 85%);
+    background: linear-gradient(180deg, rgba(0,73,182,1) 0%, rgba(128,128,128,0.41778718323266806) 85%);
 }
