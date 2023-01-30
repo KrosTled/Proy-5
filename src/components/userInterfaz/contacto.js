@@ -3,9 +3,9 @@ import '../css/main.css';
 function Contacto(){
     return (
         <div>
-            <div>
+            <form>
                 ESTOY PROBANDO SI FUNCIONA PERO EN CONTACTO
-            </div>
+            </form>
         </div>
     )
 }
