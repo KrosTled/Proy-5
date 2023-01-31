@@ -11,6 +11,7 @@ class Auth{
 
     logout(){
         window.localStorage.removeItem('jwt')
+        // navigate('/')
         this.authenticated = false
     }
 

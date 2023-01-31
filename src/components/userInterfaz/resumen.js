@@ -26,10 +26,10 @@ function Resumen(){
             <div className='col'>
                 <div>
                     <div className='textResume'>Servicios Activos</div>
-                    <div>{services.deepLearn? <div className="leftText" onClick={() => setDeploy('deapLearn')}>historial de Deeplearning AI</div>: ''} 
-                    {services.entrenamiento? <div className="leftText" onClick={() => setDeploy('Entrenamiento')}>Entrenamiento de AI</div> : ''} 
-                    {services.analisis? <div className="leftText" onClick={() => setDeploy('Entrenamiento')}>Analisis de Datos</div>: ''}  
-                    {services.equipo? <div className="leftText" onClick={() => setDeploy('Equipo')}>Supervicion de nuestro equipo</div>: ''}</div>
+                    <div>{services.deepLearn? <div className="leftText" onClick={() => setDeploy('Estamos trabajando en su solicitud, y nos ponderemos en contacto para los detalles necesarios para su IA de DeepLearning.')}>historial de Deeplearning AI</div>: ''} 
+                    {services.entrenamiento? <div className="leftText" onClick={() => setDeploy('Estamos trabajando en su solicitud, lo estaremos actualizando cada vez que haya un progreso que consideremos de relevancia.')}>Entrenamiento de AI</div> : ''} 
+                    {services.analisis? <div className="leftText" onClick={() => setDeploy('Nuestro equipo ya esta en la revicion de los datos que nos solicito, y esperamos pronto tener listo un informe completo para su entrega.')}>Analisis de Datos</div>: ''}  
+                    {services.equipo? <div className="leftText" onClick={() => setDeploy('Acutualmente nuestro equipo esta evualuando su solicitud y pronto se pondra en contacto para que su proyecto se lleve a cabo de forma adecuada.')}>Supervicion de nuestro equipo</div>: ''}</div>
                     
                 </div>
             </div>

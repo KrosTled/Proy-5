@@ -22,7 +22,7 @@ const thingsIT = [{
 },{
     id:2,
     nombre:'Servicios de analisis de datos',
-    ingredientes:'Se entregara formacion de distintas apps que permitan la visualizacion de una gran cantidad de datos.',
+    ingredientes:'Nuestro equipo hara un informe inteligente con los datos brindados por el cliente.',
     img:img3,
     ruta:'/analisis-de-datos',
     patch:'analisis',

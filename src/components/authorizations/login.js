@@ -5,14 +5,24 @@ import fondo from '../Img/fondo.svg'
 import Fotter from '../fotter';
 import { Link, useNavigate} from 'react-router-dom';
 import {login} from './auth';
+import { useState } from 'react';
+import auth from './isAuth';
+
 
 function LoginForm(){
+    const [error, setError] = useState('')
+    const [existeError, setExisteError] = useState(false)
     const navigate = useNavigate();
     function startLogin(username, password) {
         login(username, password).then(response => response.json()).then(json => {
             window.localStorage.setItem('jwt',json.token)
+            auth.login()
             navigate("/");
+        }).catch(err => {
+            setError('Usuario y/o contraseña incorrectos')
+            setExisteError(true)
         });
+        
         
       }
 
@@ -21,6 +31,7 @@ function LoginForm(){
             <div style={{height:'900px'}} className='withoutMargins width row'>
                 <div className='withoutMargins width col'>
                     <div className='containerUser' >
+                        {existeError?<div className='containerError'><h2 className='errorMsg'>{error}</h2></div>: <div></div>}
                         <div className='containerTitulo'><h2 className='titulo'>Login</h2></div>
                         <form className='formularioUser'>
                             <div className='divform'>

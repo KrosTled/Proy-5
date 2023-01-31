@@ -8,8 +8,8 @@
     width: 100%;
 }
 .userImg{
-    transform: scale(0.3);
-    translate: 0 -100px;
+    height: 88px;
+    width: 88px;
 }
 
 .upRow{
@@ -56,4 +56,16 @@
 .bgContainers{
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);
+}
+.logoutButton{
+    cursor: pointer;
+    background: #0049b6;
+    width: 200px;
+    align-self: center;
+    border-radius: 20px;
+    transition: 120ms;
+}
+.logoutButton:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }

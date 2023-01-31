@@ -4,9 +4,10 @@ import './css/coreinterfaz.css'
 import UserImg from './Img/UserImg.png';
 import Resumen from "./userInterfaz/resumen.js";
 import Servicio from "./userInterfaz/Servicios";
-
 import FAQ from "./userInterfaz/FAQ";
 import axios from 'axios';
+import auth from "./authorizations/isAuth";
+import { useNavigate } from "react-router-dom";
 
 export const UserAndServicesContext =  React.createContext('');
 
@@ -14,6 +15,7 @@ export const UserAndServicesContext =  React.createContext('');
 
 
 function CoreInterfaz(){
+    const navigate = useNavigate()
     const [userMode, changeUserMode] = useState(<Resumen/>);
     const [username, setUsername] = useState('Username');
     const [services, setServices] = useState({});
@@ -42,12 +44,22 @@ function CoreInterfaz(){
             
             <div className="col">
                 <div className="bgNormal row">
-                    <div className="col">Mi cuenta</div>  
+                    <div className="col">Mi cuenta</div>
+                    <div className="col">
+                    <div className="logoutButton" onClick={() => {
+                        auth.logout()
+                       navigate('/')
+                    }}>Logout</div> 
+                    </div>
+                     
                 </div>
                 <div className="upRow row">
                     <div className="col">
                         <div className="upRow row">
-                            <img src={UserImg} className="col userImg" />
+                            <div className="upRow col">
+                            <img src={UserImg} className="userImg" />
+                            </div>
+                            
                             <div className="upRow col">
                                 <div>Nombre de Usuario: {username}</div>
                             </div>

@@ -3,22 +3,24 @@ import bgCards from './Img/bgCards.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import {thingsIT} from './elementosTienda.js';
 
-
 function ThingsElement(){
+    const navigate = useNavigate();
     return (
       thingsIT.map((element) => (
             <Card
         style={{
           width: '18rem',
           height: '30rem',
-          backgroundImage: `url(${bgCards})` 
+          backgroundImage: `url(${bgCards})`,
+          cursor:'pointer'
         }}
         key={element.id}
         className='cardFromArray'
+        onClick={() => navigate(element.ruta)}
       >
         <Card.Body>
           <Card.Img className='imgCard' variant="top" src={element.img}/>
@@ -35,7 +37,6 @@ function ThingsElement(){
             {element.ingredientes}
           </Card.Text>
         </Card.Body>
-        <Link to={element.ruta}>{element.ruta}</Link>
         </Card>
         ))   
   )
@@ -52,7 +53,7 @@ function ListadoThings(){
                         <div className='menuArrayCards'>
                             <ThingsElement/>  
                         </div>
-                        <h5 className='footerCatalog'>Para cualquier adquisicion de un producto hacer desde panel de usuario</h5>
+                        <h5 className='footerCatalog'>Para cualquier adquisicion de un producto hacerse desde panel de usuario</h5>
                     </Container> 
                 </div>  
             </div>

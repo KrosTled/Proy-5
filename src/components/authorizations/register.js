@@ -5,14 +5,31 @@ import fondo from '../Img/fondo.svg'
 import Fotter from '../fotter';
 import { Link, useNavigate} from 'react-router-dom';
 import {register} from './auth';
+import { useState } from 'react';
+import auth from './isAuth';
 
 function RegisterForm(){
+    const [error, setError] = useState('')
+    const [existeError, setExisteError] = useState(false)
     const navigate = useNavigate();
     function startRegister(username, password) {
-        register(username, password).then(response => response.json()).then(json => {
-            window.localStorage.setItem('jwt',json.token)
-            navigate("/");
-        });
+        if(username.length >= 5 && password.length >= 5){
+            register(username, password).then(response => response.json()).then(json => {
+                window.localStorage.setItem('jwt',json.token)
+                auth.login()
+                navigate("/");
+            });
+        }else{
+            if(password.length < 5){
+                setError('Contraseña demasiado corta debe tener minimo 5 caracteres')
+                setExisteError(true)
+            }
+            if(username.length < 5){
+                setError('Nombre de usuario demasiado corta debe tener minimo 5 caracteres')
+                setExisteError(true)
+            }
+        }
+        
         
       }
 
@@ -21,6 +38,7 @@ function RegisterForm(){
             <div style={{height:'900px'}} className='withoutMargins width row'>
                 <div className='withoutMargins width col'>
                     <div className='containerUser' >
+                        {existeError?<div className='containerError'><h2 className='errorMsg'>{error}</h2></div>: <div></div>}
                         <div className='containerTitulo'><h2 className='titulo'>Register</h2></div>
                         <form className='formularioUser'>
                             <div className='divform'>

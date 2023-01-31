@@ -23,39 +23,39 @@ nav{
     scale: 1.1;
     cursor: pointer;
 }
-
-.imgLogo{
-    width: 120px;
-    height: 120px;
-}
 .upperNav{
     display: flexbox;
     flex-direction: row;
     justify-content: baseline;
 }
 .contentNav{
+    width: 100%;
     margin-top: 5px;
 }
-
-.navElement{
-    cursor: pointer;
-    transition: 120ms;
-}
-
-.navElement:hover{
-    transform: scale(1.2);
-}
+ 
 
 .linkDecoration{
     text-decoration: none;
     color: white;
     border-radius: 20px;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 .linkDecoration:hover{
+    transform: scale(1.2);
     background-color: rgba(0, 0, 0, 0.2);
     color: rgb(192, 192, 192);
 }
 .navBg{
     background: rgb(0,73,182);
     background: linear-gradient(180deg, rgba(0,73,182,1) 0%, rgba(128,128,128,0.41778718323266806) 85%);
+}
+.imgLogo{
+    margin-left: 891px;
+    margin-right: 891px;
+    width: 120px;
+    height: 120px;
 }

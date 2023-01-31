@@ -6,7 +6,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import rutas from './routes/rutas';
 
 
-const router = createBrowserRouter(rutas)
+
+const router = createBrowserRouter(rutas,{
+  basename: '/Proy-5'
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

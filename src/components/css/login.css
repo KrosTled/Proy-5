@@ -6,20 +6,20 @@
     padding: 0 0 0 0;
 }
 .containerTitulo{
-    padding-top: 5%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-top: 25px;
+    padding-left: 228px;
+    padding-right: 228px;
 }
 .titulo{
     color: black;
 }
 
 .containerUser{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 380px;
+    margin-right: 380px;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 60%;
+    width: 1141px;
     padding: 0 0 0 0;
     background-color: white;
     color: black;
@@ -44,8 +44,8 @@
     box-shadow: 5px 5px 5px rgba(95, 0, 154, 0.3);
 }
 .formularioUser{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 228px;
+    padding-right: 228px;
 }
 .formularioUser .divform{
     margin-top: 30px;
@@ -104,4 +104,24 @@
 .linkContainer{
     display: block;
     flex-direction: row;
+}
+
+.containerError{
+    background-color: rgb(255, 167, 167);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    margin-left: 228px;
+    margin-right: 228px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+.errorMsg{
+    color:black;
+    font-size: 18px;
 }

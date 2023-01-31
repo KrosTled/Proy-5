@@ -11,7 +11,6 @@ async function login(username, password){
       
      body: JSON.stringify({"username": username, "password": password,}) // body data type must match "Content-Type" header
     });
-    console.log(response)
     return response;
     }catch(err){
       return err;
@@ -30,7 +29,6 @@ async function register(username, password){
       },
       body: JSON.stringify({"username": username, "password": password,}) // body data type must match "Content-Type" header
     });
-    console.log(response)
     return response;
     }catch(err){
       return err;
