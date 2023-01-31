@@ -4,7 +4,7 @@ import '../css/login.css';
 import fondo from '../Img/fondo.svg'
 import Fotter from '../fotter';
 import { Link, useNavigate} from 'react-router-dom';
-import {verify, login} from './auth';
+import {login} from './auth';
 
 function LoginForm(){
     const navigate = useNavigate();

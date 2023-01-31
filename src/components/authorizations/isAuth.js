@@ -1,4 +1,4 @@
-import { verify } from "./auth"
+
 
 class Auth{
     constructor(){
@@ -10,6 +10,7 @@ class Auth{
     }
 
     logout(){
+        window.localStorage.removeItem('jwt')
         this.authenticated = false
     }
 

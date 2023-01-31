@@ -13,7 +13,6 @@
     "express": "^4.18.2",
     "express-jwt": "^8.4.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.9.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
@@ -46,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

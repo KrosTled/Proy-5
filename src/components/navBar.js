@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import './css/navBar.css';
 import './css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';

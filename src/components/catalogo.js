@@ -1,28 +1,12 @@
-import NavBar from './navBar.js';
 import './css/Menu.css'
 import bgCards from './Img/bgCards.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-
-
+import { Link } from 'react-router-dom';
 
 import {thingsIT} from './elementosTienda.js';
 
-function BasicExample() {
-  return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img style={"width:18rem"} variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  );
-}
 
 function ThingsElement(){
     return (
@@ -30,7 +14,7 @@ function ThingsElement(){
             <Card
         style={{
           width: '18rem',
-          height: '28rem',
+          height: '30rem',
           backgroundImage: `url(${bgCards})` 
         }}
         key={element.id}
@@ -51,28 +35,9 @@ function ThingsElement(){
             {element.ingredientes}
           </Card.Text>
         </Card.Body>
+        <Link to={element.ruta}>{element.ruta}</Link>
         </Card>
         ))   
-  )
-}
-
-function Catalogo(){
-    return (
-    <div>
-        <NavBar/>   
-        <div className='bgHeigtMenu' >
-            <div className='menuElements'>
-                <Container>
-                  <div className='ConjuntoDeElementos'>
-                    <h2 className='menuTitulo'>Servicios</h2>
-                    <div className='menuArrayCards'>
-                        <ThingsElement/>  
-                    </div>
-                  </div>  
-                </Container> 
-            </div>  
-        </div>
-    </div>
   )
 }
 function ListadoThings(){

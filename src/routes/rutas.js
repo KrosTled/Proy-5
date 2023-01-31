@@ -4,7 +4,6 @@ import About from '../About';
 import Error from '../Error.js';
 import LoginTemplate from '../components/authorizations/login.js';
 import RegisterTemplate from '../components/authorizations/register.js';
-import auth from '../components/authorizations/isAuth';
 
 const rutas = [
     {
@@ -13,7 +12,8 @@ const rutas = [
     },{
     path:'/',
     element:<App/>//Home
-  },{
+  }
+  ,{
     path:'/about',
     element:<About/>
   }
