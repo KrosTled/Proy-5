@@ -30,7 +30,6 @@ function CoreInterfaz(){
         setServices({deepLearn : res.data.deepLearn, entrenamiento: res.data.entrenamiento, analisis: res.data.analisis, equipo: res.data.equipo})
     })
     .catch((error) => {
-    console.error(error)
     }) 
     // De forma similar a componentDidMount y componentDidUpdate  
     useEffect(() => {   

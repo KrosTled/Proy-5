@@ -10,7 +10,7 @@ const thingsIT = [{
     img:img1,
     ruta:'/deepLearning',
     patch:'deepLearn',
-    precio:'7.800',
+    precio:'300',
 },{
     id:1,
     nombre:'Entrenamiento bajo vigilancia',
@@ -18,7 +18,7 @@ const thingsIT = [{
     img:img2,
     ruta:'/entrenamiento',
     patch:'entrenamiento',
-    precio:'5.000'
+    precio:'500'
 },{
     id:2,
     nombre:'Servicios de analisis de datos',
@@ -26,7 +26,7 @@ const thingsIT = [{
     img:img3,
     ruta:'/analisis-de-datos',
     patch:'analisis',
-    precio:'6.500'
+    precio:'50'
 },{
     id:3,
     nombre:'Equipo de supervicion de especialistas',
@@ -34,7 +34,7 @@ const thingsIT = [{
     img:img4,
     ruta:'/apoyo-y-supervision',
     patch:'equipo',
-    precio:'6.500'
+    precio:'100'
 }
 ]
 
