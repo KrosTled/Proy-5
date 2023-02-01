@@ -97,7 +97,7 @@ function Servicio(){
     return (
         <div className='width'>
             <div className='width'>
-            A veces tardan en aparecer log botones de Paypal, se agradece la paciencia.
+            A veces tardan en aparecer los botones de Paypal, se agradece la paciencia.
                 <div className='width row'>
                   <ThingsElement/>
                 </div>
